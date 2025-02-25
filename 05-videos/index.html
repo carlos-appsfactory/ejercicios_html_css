@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de videos insertados</title>
+</head>
+<body>
+  <div style="display: flex; flex-wrap:wrap; justify-content: space-around;">
+    <div style="width: 50%;">
+      <h1>Video con src</h1>
+      <video src="leon.mp4" controls="controls" poster="leon.jpg" preload="auto">
+        Tu navegador no soporta la etiqueta <code>video</code>.
+      </video>
+    </div>
+
+    <div style="width: 50%;">
+      <h1>Video con source</h1>
+      <video poster="leon.jpg" controls autoplay loop>
+        <source src="leon.mp4" type="video/mp4">
+        <source src="leon.webm" type="video/webm">
+        Tu navegador no soporta la etiqueta <code>video</code>.
+      </video>
+    </div>
+
+    <div style="width: 50%;">
+      <h1>Audio con src</h1>
+      <audio src="HakunaMatataItMeansNoWorries.mp3" controls="controls" preload="auto">
+        Tu navegador no soporta la etiqueta <code>audio</code>.
+      </audio>
+    </div>
+
+    <div style="width: 50%;">
+      <h1>Audio con source</h1>
+      <audio controls autoplay loop>
+        <source src="HakunaMatataItMeansNoWorries.mp3" type="audio/mpeg">
+        <source src="HakunaMatataItMeansNoWorries.wav" type="audio/wav">
+        Tu navegador no soporta la etiqueta <code>audio</code>.
+      </audio>
+    </div>
+  </div>
+</body>
+</html>
