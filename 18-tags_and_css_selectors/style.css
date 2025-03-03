@@ -1,0 +1,206 @@
+body{
+  margin: 0;
+}
+
+/************************************************************ JOKES ************************************************************/
+#jokes-exercise{
+  background-color: #FBC79F;
+}
+
+#jokes-exercise > *{
+  margin: 0 auto;
+}
+
+#jokes-exercise h1{
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.joke {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.joke p{
+  margin: 0 auto;
+}
+
+.green-joke{
+  background-color: #8AD0C0;
+  border: 5px solid #65988C;
+}
+
+.yellow-joke{
+  background-color: #FFFFB5;
+  border: 5px double #FFFF00;
+}
+
+.grey-dotted-joke {
+  background-color: #E0E0E0;
+  border: 5px dotted #848484;
+}
+
+.grey-double-joke {
+  background-color: #E0E0E0;
+  border: 5px double #848484;
+}
+
+.purple-joke {
+  background-color: #DFDAF2;
+  border: 5px dashed #A89BDB;
+}
+
+/************************************************************ QUOTES ************************************************************/
+#quotes-exercise {
+  background-color: #287554;
+}
+
+#quotes-exercise h1 {
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 56px;
+}
+
+#quotes-exercise p {
+  margin: 0;
+}
+
+.quote{
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.center-quote {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right-quote {
+  margin-left: auto;
+}
+
+.white-quote{
+  color: black;
+  background-color: white;
+  border: 5px solid black;
+}
+
+.red-quote{
+  background-color: #AA5A3A;
+  border: 5px solid #862600;
+}
+
+.orange-quote {
+  background-color: #AA7A3A;
+  border: 5px solid #864D00;
+}
+
+.blue-quote {
+  background-color: #2A506D;
+  border: 5px dashed #697C8B;
+}
+
+/************************************************************ SPANS ************************************************************/
+#spans-exercise {
+  background-color: #C6D9EE;
+  font-family: sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#spans-exercise h1 {
+  padding-bottom: 40px;
+  font-size: 48px;
+  text-align: right;
+}
+
+#spans-exercise h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+#spans-exercise .red-span{
+  color: #A52A2A;
+}
+
+#spans-exercise .bold-span{
+  font-weight: bold;
+}
+
+#spans-exercise .bordered-span {
+  border-top: 1px solid #A52A2A;
+  border-bottom: 1px solid #A52A2A;
+}
+
+#spans-exercise .green-span{
+  color: green;
+  background-color: white;
+}
+
+#spans-exercise .blue-span {
+  color: blue;
+  font-size: 48px;
+  font-style: italic;
+}
+
+/************************************************************ SPANS ************************************************************/
+#dejavu-exercise {
+  margin: 0 auto;
+  background-color: #D3D3D3;
+}
+
+#dejavu-exercise h1 {
+  background-color: black;
+  color: white;
+  font-size: 48px;
+  text-align: right;
+}
+
+#news{
+  border-bottom: 5px solid black;
+}
+
+.headline,
+.time{
+  text-align: center;
+  font-size: 24px;
+}
+
+.headline {
+  margin: 20px auto;
+  border-bottom: 5px solid white;
+}
+
+.time{
+  color: white;
+  font-weight: bold;
+}
+
+.time time{
+  background-color: #808080;
+  padding: 5px;
+}
+
+.person-name{
+  font-weight: bold;
+}
+
+.person-title{
+  color: red;
+  background-color: white;
+}
+
+.place{
+  color: blue;
+}
+
+.highlight {
+  font-size: 150%;
+  font-style: italic;
+  border-bottom: 1px dashed red;
+}

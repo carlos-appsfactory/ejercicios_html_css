@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .title{
+      background-color: #BBBBBB;
+      padding-left: 10px;
+      margin-bottom: 0;
+    }
+
+    .subtitle{
+      margin-top: 0;
+      padding: 0 10px 5px 0;
+      background-color: #DDDDDD;
+      text-align: right;
+      border-bottom: 3px dashed #BBBBBB;
+    }
+
+    .bulletin-board{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    .bulletin-col{
+      border: 1px solid black;
+      border-left: 3px dashed #BBBBBB;
+      border-right: 3px dashed #BBBBBB;
+      flex-basis: 25%;
+      padding: 0 10px 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow: auto;
+    }
+
+    .bulletin-col-title{
+      background-color: #DDDDDD;
+      padding: 10px;
+      margin: 0;
+      font-size: 130%;
+      text-align: center;
+      overflow: auto;
+    }
+
+    .bulletin{
+      border: 1px solid black;
+    }
+
+    .bulletin-title{
+      color: white;
+      background-color: #BBBBBB;
+      margin: 0;
+      text-align: right;
+      font-size: 110%;
+      padding-right: 10px;
+    }
+
+    .bulletin-content{
+      width: 85%;
+      margin: 0 auto;
+      overflow: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="title">La Prensa</h1>
+  <h2 class="subtitle">Anuncios por palabras</h2>
+  <div class="bulletin-board">
+
+    <div class="bulletin-col">
+      <h3 class="bulletin-col-title">COMPRA/VENTA</h3>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CV001</h4>
+        <p class="bulletin-content">
+          Vndo máquina d scribir qu l falta una tcla.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CV002</h4>
+        <p class="bulletin-content">Vendo Cristo, marca INRI.</p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CV003</h4>
+        <p class="bulletin-content">
+          Vendo audífono, no escucho ofertas.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CV004</h4>
+        <p class="bulletin-content">
+          Joven necesitado vende madre usada en perfectas condiciones. Excelente cocinera, buen trato y servicio de despertador.
+          No hacer caso de las lágrimas.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CV005</h4>
+        <p class="bulletin-content">
+          Vendo coche, con cuatro puertas, con excelentes vistas a la calle
+        </p>
+      </div>
+    </div>
+
+    <div class="bulletin-col">
+      <h3 class="bulletin-col-title">CAMBIO</h3>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CA001</h4>
+        <p class="bulletin-content">
+          Cambio pastor alemán por uno que hable español.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref CA002</h4>
+        <p class="bulletin-content">
+          Cambio lindo perro Doberman por mano ortopédica
+        </p>
+      </div>
+    </div>
+
+    <div class="bulletin-col">
+      <h3 class="bulletin-col-title">VARIOS</h3>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref VA001</h4>
+        <p class="bulletin-content">
+          Si su suegra es una joyita... nosotros tenemos el mejor estuche. Funeraria Pérez
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref VA002</h4>
+        <p class="bulletin-content">
+          Divorcios en 24 horas. Satisfacción garantizada o le devolvemos a su cónyuge.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref VA003</h4>
+        <p class="bulletin-content">
+          Maga. Encantamientos. Magia blanca, negra y otros colores.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref VA004</h4>
+        <p class="bulletin-content">
+          Se pintan casas a domicilio.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref VA005</h4>
+        <p class="bulletin-content">
+          Coleccionista. Colecciono colecciones, no importa de qué.
+        </p>
+      </div>
+    </div>
+
+    <div class="bulletin-col">
+      <h3 class="bulletin-col-title">EMPLEO</h3>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref EM001</h4>
+        <p class="bulletin-content">
+          Desempleado con muchos años de experiencia, se ofrece para estadísticas.
+        </p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref EM002</h4>
+        <p class="bulletin-content">Buscopersonaltecnicoparaarreglarmibarraespaciadora.</p>
+      </div>
+      <div class="bulletin">
+        <h4 class="bulletin-title">ref EM003</h4>
+        <p class="bulletin-content">
+          Gane dinero trabajando en casa y en sus horas libres. Envíenos al apdo. de correos 253 una foto y 900 euros en sellos.
+          Tendrá noticias.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
