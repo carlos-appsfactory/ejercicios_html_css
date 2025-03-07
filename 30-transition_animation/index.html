@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  <style>
+    body{
+      max-width: 800px;
+      margin: 10px auto;
+    }
+
+    body > *{
+      margin: 0 auto;
+    }
+
+    .no-animation,
+    .animation,
+    .animation2,
+    .decomposed-css{
+      background-color: pink;
+    }
+
+    .no-animation:hover,
+    .animation:hover,
+    .animation2:hover{
+      background-color: black;
+    }
+
+    .animation{
+      transition: 3s;
+    }
+
+    .animation2{
+      transition: 5s;
+    }
+
+    .animation2:hover{
+      transition: 1s;
+    }
+
+    .font *{
+      transition: 3s;
+    }
+
+    .font:hover .red{
+      color: red;
+    }
+
+    .font:hover .blue{
+      color: blue;
+      font-size: 5rem;
+    }
+
+    .font:hover .orange{
+      color: orange;
+      font-size: 10rem;
+    }
+
+    .font2{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+      font-size: 1.5rem;
+    }
+
+    .font2 p{
+      margin: 0 auto;
+      text-shadow: 
+        -50px -50px blue,
+        50px -50px orange,
+        50px 50px green,
+        -50px 50px red;
+
+      transition: 1s;
+    }
+
+    .font2:hover p{
+      text-shadow: 
+        50px 50px red,
+        -50px -50px blue,
+        -50px 50px orange,
+        50px -50px green;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar ul li{
+      border: 3px solid red;
+      border-radius: 5px;
+      padding: 15px;
+      color: white;
+      font-family: 'Ranchers';
+      text-shadow: 3px 3px 3px orange;
+      background: linear-gradient(green, red);
+      transition: 0s;
+    }
+
+    .navbar ul li:hover{
+      background: 
+        url('./indiana.png') center,
+        linear-gradient(green, red);
+      transition: 2s;
+    }
+
+    .decomposed-css{
+      width: 300px;
+      height: 300px;
+	    transition-property: width, height;
+	    transition-duration: 1s, 5s;
+      transition-timing-function: linear, ease-in;
+    }
+
+    .decomposed-css:hover{
+      width: 800px;
+      height: 800px;
+    }
+
+    .decomposed-css2{
+      width: 300px;
+      height: 300px;
+      background-color: red;
+      transition:
+        width 2s ease-in,
+        heigt 4s ease-in,
+        background-color 2.5s linear,
+        font-size 2.5s linear;
+    }
+
+    .decomposed-css2:hover{
+      width: 800px;
+      height: 800px;
+      font-size: 10rem;
+      background-color: blue;
+    }
+
+    .decomposed-css2 p{
+      margin-top: 1rem;
+    }
+
+    .target #target-title:target{
+      background-color: red;
+      transition: 1s;
+    }
+
+    .load-bar{
+      width: 100%;
+      height: 30px;
+      background-color: grey;
+    }
+
+    .load-bar .progress{
+      width: 0%;
+      height: 100%;
+      transition: 10s;
+      background-image: repeating-linear-gradient(-45deg, #9313FA, #9313FA 5px, #AB56FF 5px, #AB56FF 10px);
+    }
+
+    .load-bar:hover .progress{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="no-animation">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="animation">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="animation2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="font">
+    <p><span class="red">h</span><span class="blue">o</span>l<span class="orange">a</span>
+    </p>
+  </div>
+
+  <div class="font2">
+    <p>hola!</p>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li>Home</li>
+      <li>Fotos</li>
+      <li>Videos</li>
+      <li>Contacto</li>
+    </ul>
+  </div>
+
+  <div class="decomposed-css">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna
+      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <div class="decomposed-css2">
+    <p>texto</p>
+  </div>
+
+  <div class="target">
+    <p><a href="#target-title">link</a></p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatatnonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <h1 id="target-title">Texto al que vamos</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatatnonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <div class="load-bar">
+    <div class="progress"></div>
+  </div>
+</body>
+</html>
