@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border: 3px solid black;
+      padding: 15px;
+    }
+
+    form > div{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    form > *:last-child input{
+      margin: 0 auto;
+      width: 30%;
+    }
+
+    form > div *{
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://dummyjson.com/auth/login" method="POST">
+    <!--
+    <div>
+      <label for="email">Email: </label>
+      <input name="email" type="text" placeholder="username@email.com" required pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+    </div>
+    -->
+    <div>
+      <label for="username ">User: </label>
+      <input name="username " type="text" placeholder="username">
+    </div>
+    <div>
+      <label for="password ">Password: </label>
+      <input name="password " type="password" placeholder="password" required>
+    </div>
+    <div>
+      <input type="submit" value="Log In">
+    </div>
+  </form>
+
+  <form>
+    <div>
+      <label for="email">Email: </label>
+      <input name="email" type="text" placeholder="username@email.com" required pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+    </div>
+    <div>
+      <label for="comments">Comentarios: </label>
+      <textarea name="comments" placeholder="Escribe aquí tus comentarios..."></textarea>
+    </div>
+    <div>
+      <input name="radio_name" type="radio" value="first">
+      <label for="first">Primero</label>
+      <input name="radio_name" type="radio" value="second">
+      <label for="second">Segundo</label>
+      <input name="radio_name" type="radio" value="third">
+      <label for="third">Tercero</label>
+    </div>
+    <div>
+      <label name="conditions" for="">Acepto los terminos y condiciones</label>
+      <input name="conditions" type="checkbox">
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    form{
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    form > div{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    form > div > *{
+      width: 45%;
+    }
+
+    input[required]{
+      border: 3px solid black;
+    }
+
+    input:invalid{
+      background-color: #FA8072;
+    }
+
+    input:valid{
+      background-color: #98FB98;
+    }
+
+    input[type=submit]{
+      background-color: #EFEFEF;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Validación de un formulario con HTML</h1>
+  <form>
+    <div>
+      <label for="name">Nombre: </label>
+      <input id="name" type="text" required>
+    </div>
+    <div>
+      <label for="age">Edad: </label>
+      <input id="age" type="text" required>
+    </div>
+    <div>
+      <label for="postcode">Código postal: </label>
+      <input id="postcode" type="text" required>
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input id="email" type="text">
+    </div>
+    <div>
+      <label for="date">Fecha de reserva: </label>
+      <input id="postcode" type="date" required>
+    </div>
+    <div>
+      <label for="note">Nota: </label>
+      <input id="note" type="range">
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</body>
+</html>

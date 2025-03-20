@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #checkbox_label{
+      background-image: url('https://pablomonteserin.com/wp-content/uploads/2020/10/check_radio_sheet.png');
+      width: 20px;
+      height: 20px;
+      display: block;
+      background-position: 2px;
+    }
+
+    #checkbox_input:checked + #checkbox_label{
+      background-position: -18px;
+    }
+
+    #checkbox_input{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <input id="checkbox_input" type="checkbox">
+  <label id="checkbox_label" for="checkbox_input"></label>
+</body>
+</html>

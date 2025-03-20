@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @font-face{
+    font-family: arrow;
+    src: url(Arrows_tfb.ttf)
+  }
+
+  body{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .menu,
+  .dropdown{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu{
+    width: 75%;
+  }
+
+  .dropdown{
+    width: 25%;
+  }
+
+  .menu a{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    background-color: pink;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .menu a:hover{
+    background-color: salmon;
+    cursor: pointer;
+  }
+
+  .hasChildren{
+    position: relative;
+  }
+
+  .menu li.hasChildren > a::after{
+    font-family: arrow;
+    content: 'o';
+    margin-left: 5px;
+  }
+
+  .dropdown{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: -25%;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .3s, opacity .7s;
+  }
+
+  .menu li:hover .dropdown{
+    max-height: 600px;
+    transition: max-height 1.2s, opacity 1.5s;
+    opacity: 1;
+  }
+</style>
+<body>
+  <ul class="menu">
+    <li>
+      <a href="">Home</a>
+    </li>
+    <li class="hasChildren">
+      <a href="">Fotos</a>
+      <ul class="dropdown">
+        <li>
+          <a href="">Submenu 1</a>
+        </li>
+        <li>
+          <a href="">Submenu 2</a>
+        </li>
+        <li>
+          <a href="">Submenu 3</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="">Videos</a>
+    </li>
+    <li>
+      <a href="">Contact</a>
+    </li>
+  </ul>
+</body>
+</html>

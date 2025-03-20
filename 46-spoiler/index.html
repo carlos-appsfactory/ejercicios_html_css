@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[type="checkbox"]{
+      display: none;
+    }
+
+    input:checked + .content{
+      display: block;
+    }
+
+    input:not(:checked) + .content{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <label for="spoiler">SPOILER</label>
+  <input id="spoiler" type="checkbox">
+  <span class="content">ESTO ES UN SPOILER</span>
+</body>
+</html>

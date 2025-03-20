@@ -1,0 +1,106 @@
+/************************************************************** GENERAL **************************************************************/
+body{
+  background-color: #F0F8FF;
+  font-family: 'Arsenal', sans-serif;
+  color: #708090;
+}
+
+img{
+  width: 100%;
+}
+
+/************************************************************** HEADER **************************************************************/
+header{
+  padding: .5rem 1rem .5rem 1rem;
+  background-color: #658D8D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.main-menu{
+  width: 10%;
+  position: relative;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu p,
+.main-menu li {
+  color: #92D3ED;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-size: .8rem;
+  border: 1px solid #92D3ED;
+  border-radius: 5px;
+  margin: 0;
+  padding: .3rem 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-menu ul{
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding-top: .5rem;
+}
+
+.main-menu ul li:hover{
+  color: #B0C4DE;
+}
+
+.main-menu:hover p{
+  background: #B0C4DE;
+  color: #FFFFFF;
+}
+
+.main-menu:hover ul {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+/************************************************************** MAIN **************************************************************/
+main {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.33%;
+}
+
+main > *{
+  width: 30%;
+}
+
+/************************************************************** PRESENTATION  **************************************************************/
+.presentation-data{
+  display: flex;
+  gap: 1rem;
+}
+
+/************************************************************** FORMATION  **************************************************************/
+.formation-content p{
+  margin: 0;
+}
+
+.regulated-formation > div,
+.unregulated-formation > div{
+  margin-bottom: 1rem;
+}
+
+.formation-title{
+  font-size: 1.1rem;
+  font-weight: 700;
+}

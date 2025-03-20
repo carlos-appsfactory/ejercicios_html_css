@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px 0;
+      max-width: 500px;
+    }
+
+    form > *{
+      width: 45%;
+    }
+
+    textarea{
+      min-height: 150px;
+    }
+
+    input[type=checkbox]{
+      margin: 0;
+    }
+
+    input[type=submit]{
+      padding: .2rem 1.5rem .2rem 1.5rem;
+    }
+
+    .submit-container{
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Maquetación de un formulario con HTML y CSS</h1>
+  <form action="">
+    
+    <label for="name">Nombre:</label>
+    <input name="name" type="text">
+
+    <label for="email">Email:</label>
+    <input name="email" type="text">
+
+    <label for="comments">Comentarios:</label>
+    <textarea name="comments"></textarea>
+
+    <label for="conditions">Acepto las condiciones:</label>
+    <div>
+      <input name="conditions" type="checkbox">
+    </div>
+    
+    <div class="submit-container">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</body>
+</html>
